@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/song_title"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="8dp"
+            android:text="Nama Lagu"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/edit_song"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/play_song"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="15dp"
+            android:background="#FCDB03"
+            android:text="Edit"
+            android:textColor="#ffff" />
+
+        <Button
+            android:id="@+id/delete_song"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/play_song"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/edit_song"
+            android:background="#FC0303"
+            android:text="Delete"
+            android:textColor="#ffff" />
+
+        <Button
+            android:id="@+id/stop_song"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_below="@+id/song_title"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="69dp"
+            android:layout_toEndOf="@+id/play_song"
+            android:background="@drawable/stop2"
+            android:textColor="#ffff" />
+
+        <Button
+            android:id="@+id/play_song"
+            android:layout_width="27dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/song_title"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/play"
+            android:onClick="playBtnClick"
+            android:textColor="#ffff" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

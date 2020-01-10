@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:icon="@drawable/album"
+            android:id="@+id/Album"
+            android:title="Album"/>
+        <item
+            android:icon="@drawable/artist"
+            android:id="@+id/Artist"
+            android:title="Artist"/>
+        <item
+            android:icon="@drawable/log_out"
+            android:id="@+id/nav_logout"
+            android:title="Sign Out"/>
+    </group>
+</menu>
